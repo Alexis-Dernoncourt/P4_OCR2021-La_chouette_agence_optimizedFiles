@@ -1,14 +1,22 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Agence web à Lyon : stratégie web, illustrations, design, création de sites internet... Découvrez notre entreprise spécialisée en webdesign et n'hésitez pas à nous contacter, nous feront tout afin de trouver les meilleures solutions pour vous! La Chouette Agence est implémentée à Lyon et à Paris.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg"> <!-- modifier favicon par fichier .ico + revoir attribut rel (juste icon ?) -->
+    <link rel="shortcut icon" type="icon" href="favicon.jpg"> <!-- modifier favicon par fichier .ico + revoir attribut rel (juste icon ?) -->
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </noscript>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+	<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </noscript>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
     <title>La Chouette Agence - Entreprise spécialisée en webdesign à Lyon</title>
@@ -21,10 +29,10 @@
 </head>
 <body>
 <!-- Principal conteneur -->
-<div class="page-container">
+<main class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
+<section class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 
 		<nav class="navbar row">
@@ -40,19 +48,17 @@
 						<a href="/">Accueil</a>
 					</li>
 					<li>
-					</li>
-					<li>
 						<a href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-</div>
+</section>
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
@@ -66,15 +72,15 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
-<div class="bloc bgc-white l-bloc" id="bloc-2-services">
+<section class="bloc bgc-white l-bloc" id="bloc-2-services">
 	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" />
+		<div class="container-fluid center-block">
+			<div class="col-lg-9 col-lg-offset-2 col-sm-12 text-center">
+				<h2 class="container-fluid mg-md">La Chouette Agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.</h2>
 			</div>
 		</div>
 		<div class="row voffset-lg med-width-whitespace">
@@ -119,11 +125,11 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-2-services END -->
 
 <!-- bloc-3-what-i-do -->
-<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+<section class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace black-background">
 			<div class="col-sm-12">
@@ -136,15 +142,15 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
-<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" />
+				<h2>Nous travaillons avec beaucoup de clients,<br />voici nos réalisations.</h2>
 			</div>
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
@@ -188,11 +194,11 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
 			<h2 class="mg-md text-center tc-white">
@@ -203,11 +209,11 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-5-cta END -->
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -239,16 +245,16 @@
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
-</div>
+</main>
 <!-- Principal conteneur END -->
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" async></script>
-	<script src="./js/gmaps.js"></script>
+	<script defer src="https://code.jquery.com/jquery-2.1.0.min.js" integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous"></script>
+	<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script defer src="./js/blocs.js"></script>
+	<script defer src="./js/jquery.touchSwipe.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha512-gauu0VKZq9ry8hOZHgNpcB2ogbSDojs+XLDItpOLY0IyA+KigeuT/suwSdPgfU/TGYLAn4Nan4OeaCa/UPr70Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
