@@ -799,6 +799,13 @@ h4 {
     text-shadow: 0px 1px 11px #000;
 }
 
+a:focus {
+    outline: #ff7230 !important;
+    outline-width: 4px !important;
+    outline-style: solid !important;
+    outline-offset: 2px !important;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
