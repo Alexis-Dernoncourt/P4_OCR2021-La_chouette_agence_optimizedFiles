@@ -1,3 +1,7 @@
+:root {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -815,7 +819,7 @@ h4 {
     text-shadow: 0px 1px 11px #000;
 }
 
-a:focus {
+a:focus, button:focus, .navbar-collapse:focus {
     outline: #ff7230 !important;
     outline-width: 4px !important;
     outline-style: solid !important;
@@ -865,6 +869,7 @@ a:focus {
 }
 
 .bg-banniere {
+    background-color: #364577;
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
