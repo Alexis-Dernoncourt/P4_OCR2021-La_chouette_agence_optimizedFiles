@@ -36,7 +36,7 @@ blockquote {
     font-size: 18px;
 }
 cite {
-    color: #777;
+    color: #575757;
     font-style: normal;
 }
 
@@ -146,7 +146,7 @@ cite {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .8);
 }
 
 .d-bloc .a-btn:hover,
@@ -690,7 +690,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -752,6 +752,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: #000 !important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
     margin-left: auto;
@@ -768,7 +772,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -783,6 +787,14 @@ h4 {
     border-radius: 2px;
 }
 
+.bgc-black-opac {
+    color: #FFF;
+    background-color: #000;
+    opacity: .7;
+    border-radius: 4px;
+    padding: 30px 0;
+}
+
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
@@ -795,6 +807,10 @@ h4 {
     color: #F3976C!important;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 .text-shadow-black {
     text-shadow: 0px 1px 11px #000;
 }
@@ -803,12 +819,12 @@ a:focus {
     outline: #ff7230 !important;
     outline-width: 4px !important;
     outline-style: solid !important;
-    outline-offset: 2px !important;
+    outline-offset: -1px !important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -835,6 +851,9 @@ a:focus {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
+}
+.icon-dark-slate-blue:hover {
+    color: #fff!important;
 }
 
 .bg-dots-bg {
