@@ -21,11 +21,11 @@
     
 </head>
 <body>
-<!-- Principal conteneur -->
+<!-- Main container -->
 <div class="page-container">
     
-<!-- bloc-0 -->
-<header class="bloc bgc-white l-bloc " id="bloc-0">
+<!-- bloc-header -->
+<header class="bloc bgc-white l-bloc">
 	<div class="container bloc-sm">
 
 		<nav class="nav navbar navbar-expand-lg navbar-light">
@@ -48,7 +48,7 @@
 		</div>
 	</div>
 </header>
-<!-- bloc-0 END -->
+<!-- bloc-header END -->
 
 <!-- bloc-1-presentation -->
 <section aria-label="Nom et logo de notre agence"
@@ -70,7 +70,7 @@
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
-<section aria-label="Présentation des services et prestations de notre agence" class="bloc l-bloc" id="bloc-2-services">
+<section aria-label="Présentation des services et prestations de notre agence" class="bloc l-bloc">
 	<div class="container bloc-md">
 		<div class="container-fluid center-block">
 			<div class="col-lg-9 col-sm-12 text-center">
@@ -125,16 +125,17 @@
 <!-- bloc-2-services END -->
 
 <!-- bloc-3-what-i-do -->
-<section aria-label="Présentation de notre agence" class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+<section aria-label="Présentation de notre agence" class="bloc tc-tangerine bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax">
 	<div class="container bloc-lg">
-		<div class="row tight-width-whitespace black-background">
+		<div class="row tight-width-whitespace black-background relative-pos">
 			<div class="col-sm-12">
-				<h2 class="mg-md text-center text-shadow-black tc-white">
+				<h2 class="mg-md text-center text-shadow-black tc-tangerine">
 					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients.<br/>
 				</h2>
 				<p class="text-center white">
-					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locales, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site internet, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br/><br/><a class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a><br>
+					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locales, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site internet, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.
 				</p>
+				<a class="ltc-tangerine bold-link" aria-label="Aller vers la page du formulaire de contact" href="contact.html">Contactez notre équipe</a>
 			</div>
 		</div>
 	</div>
@@ -142,51 +143,67 @@
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
-<section aria-label="Porfolio" class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+<section aria-label="Porfolio" class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc">
 	<div class="container bloc-lg">
 		<div class="row mg-md">
-			<div class="col-sm-12 text-center">
-				<h2>Nous travaillons avec beaucoup de clients,<br />voici nos réalisations.</h2>
+			<div class="col-sm-12 text-center mg-lg">
+				<h2>Nous travaillons avec de nombreux clients,<br />voici nos réalisations.</h2>
 			</div>
 		</div>
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-6">
-				<img loading="lazy" src="img/1.jpg" height="350" width="350" alt="Refonte de site web pour un journal local" class="img-fluid portfolio-thumb" />
-				<h3 class="portfolio-marginLR text-center">
-					Refonte d'un site web pour un journal local
-				</h3>
-				<p class="text-center portfolio-marginLR mg-md">
-					Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
-				</p>
+				<div class="relative-pos">
+					<img loading="lazy" src="img/1.jpg" height="350" width="350" alt="Refonte de site web pour un journal local" class="img-fluid portfolio-thumb" />
+					<div class="portfolio-text-container">
+						<h3 class="text-center">
+							Refonte d'un site web pour un journal local
+						</h3>
+						<p class="text-center text16px black">
+							Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-6">
-				<img loading="lazy" src="img/2.jpg" height="350" width="350" class="img-fluid portfolio-thumb" alt="Création d'un site web pour photographes" />
-				<h3 class="portfolio-marginLR text-center">
-					Création d'un site web pour photographes
-				</h3>
-				<p class="text-center portfolio-marginLR mg-md">
-					Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
-				</p>
+				<div class="relative-pos">
+					<img loading="lazy" src="img/2.jpg" height="350" width="350" class="img-fluid portfolio-thumb" alt="Création d'un site web pour photographes" />
+					<div class="portfolio-text-container">
+						<h3 class="text-center">
+							Création d'un site web pour photographes
+						</h3>
+						<p class="text-center text16px black">
+							Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-6">
-				<img loading="lazy" src="img/3.jpg" height="350" width="350" class="img-fluid portfolio-thumb" alt="Création d'un site web pour un voyageur"/>
-				<h3 class="portfolio-marginLR text-center">
-					Création d'un site internet pour un voyageur
-				</h3>
-				<p class="text-center portfolio-marginLR mg-md">
-					Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
-				</p>
+				<div class="relative-pos flex-centerElt">
+					<img loading="lazy" src="img/3.jpg" height="350" width="350" class="img-fluid portfolio-thumb" alt="Création d'un site web pour un voyageur"/>
+					<div class="portfolio-text-container">
+						<h3 class="text-center">
+							Création d'un site internet pour un voyageur
+						</h3>
+						<p class="text-center text16px black">
+							Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-6">
-				<img loading="lazy" src="img/4.jpg" height="350" width="350" class="img-fluid portfolio-thumb" alt="Création d'un site web pour agence de mariage" />
-				<h3 class="portfolio-marginLR text-center">
-					Conception d'un site pour une agence de mariage
-				</h3>
-				<p class="text-center portfolio-marginLR mg-md">
-					Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
-				</p>
+				<div class="relative-pos">
+					<img loading="lazy" src="img/4.jpg" height="350" width="350" class="img-fluid portfolio-thumb" alt="Création d'un site web pour agence de mariage" />
+					<div class="portfolio-text-container">
+						<h3 class="text-center portfolio-title">
+							Conception d'un site pour une agence de mariage
+						</h3>
+						<p class="text-center text16px black">
+							Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -194,7 +211,7 @@
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<section aria-label="Nous contacter" class="bloc bg-banniere bloc-bg-texture texture-paper" id="bloc-5-cta">
+<section aria-label="Nous contacter" class="bloc bg-banniere bloc-bg-texture texture-paper">
 	<div class="container bloc-lg">
 		<div class="row relative-pos">
 			<h2 class="mg-md text-center white text-shadow-black bgc-black-opac">
@@ -209,7 +226,7 @@
 <!-- bloc-5-cta END -->
 
 <!-- Footer - bloc-8 -->
-<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -245,7 +262,7 @@
 <!-- Footer - bloc-8 END -->
 
 </div>
-<!-- Principal conteneur END -->
+<!-- Main container END -->
 	
 	<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
