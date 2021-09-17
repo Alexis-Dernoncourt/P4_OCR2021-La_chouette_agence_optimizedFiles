@@ -437,6 +437,26 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 2px;
+    z-index: 0;
+}
+.div-portfolio-thumb {
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.thumb-journal {
+    background-image: url('img/1.jpg');
+}
+.thumb-photgraphe {
+    background-image: url('img/2.jpg');
+}
+.thumb-voyageur {
+    background-image: url('img/3.jpg');
+}
+.thumb-mariage {
+    background-image: url('img/4.jpg');
 }
 
 .portfolio-row {
@@ -467,6 +487,7 @@ h1 {
     background-color: rgba(255,255,255,.8);
     border-radius: 4px;
     padding: 5px;
+    z-index: 10000;
 }
 
 .black-background {
