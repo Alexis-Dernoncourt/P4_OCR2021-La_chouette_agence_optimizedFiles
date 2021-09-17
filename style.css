@@ -331,6 +331,10 @@ a {
     color: #575757!important;
 }
 
+.form-label {
+    font-size: 1.8rem;
+}
+
 .container {
     max-width: 1000px;
 }
@@ -694,9 +698,9 @@ a:focus, button:focus, .navbar-collapse:focus, div:focus {
     .voffset-lg {
         margin-top: 30px;
     }
-    /* form {
+    form {
         padding: 5px;
-    }*/
+    }
 }
 
 @media (max-width: 400px) {
