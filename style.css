@@ -345,6 +345,10 @@ a {
     font-size: 1.8rem;
 }
 
+.alert {
+    font-size: 1.4rem;
+}
+
 .container {
     max-width: 1000px;
 }
