@@ -42,7 +42,7 @@ $(function()
 		 			{  
 						if($form.is('[success-msg]')) // Show Success Message
 						{
-							$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('success-msg')+"</strong></div></div>");
+							$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Votre message a bien été envoyé.</strong></div></div>");
 						}
 						else // Re-Direct
 						{
@@ -55,22 +55,22 @@ $(function()
 			   		{
 						if($('#form-alert').length == 0)
 						{
-							$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('fail-msg')+"</strong></div></div>");
+							$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Il semble que le serveur ne réponde pas. Désolé, veuillez réessayer plus tard.</strong></div></div>");
 						}	
 			   		},
 		   		});
 			}
-         },
-         filter: function() // Handle hidden form elements
-		 {
-			 return $(this).is(":visible");
-         },
-	 });
+        },
+    	filter: function() // Handle hidden form elements
+		{
+			return $(this).is(":visible");
+        },
+	});
 	 
-	 // Get Path to processor PHP file
-	 function getProcessorPath(form)
-	 {
-		var path = "../includes/"+form.attr('id')+".php";
+	// Get Path to processor PHP file
+	function getProcessorPath(form)
+	{
+		var path = "./includes/"+form.attr('id')+".php";
 		
 		if(form.attr('template-path')) // Check For Template path
 		{
@@ -78,5 +78,5 @@ $(function()
 		}
 		
 	 	return path
-	 }
+	}
 });
